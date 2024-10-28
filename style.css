@@ -1,5 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 16px;
+}
 
 * {
     font-family: "Montserrat", sans-serif;
+    padding: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Ephesis", cursive;
+    font-size: 45px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: inherit;
+    display: grid;
+    justify-content: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.botonesNavegacion {
+    color: #EEE2DF;
+}
+
+.iconoCarritoDeCompras {
+    font-size: 30px;
+}
+
+header,
+footer {
+    font-size: 14px;
+    padding: 20px;
+
+    .logo {
+        width: 300px;
+    }
+
+    background-color: #7A5D52;
+    color: #EEE2DF;
+}
+
+body {
+    background-color: #EED7C5;
+    color: #010101;
+}
+
+.sectionIndexPrincipal {
+    background-image: url(".//assets/img/imagen_shop_now.jpg");
+    background-size: cover;
+    background-position: end center;
+    height: 80vh;
+}
+
+.tituloBannerCompra {
+    display: flex;
+    justify-content: center;
+}
+
+.botonDeCompraBanner{
+    color: white; /* Cambia el color del texto */
+    border: none; /* Elimina el borde */
+    cursor: pointer; 
+    border-radius: 5px; 
+    text-align: center;
+}
+
+.fotosProductosRecomendados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.fotosProductosRecomendados a {
+    width: 30%;
+    text-decoration: none;
+}
+
+.fotosProductosRecomendados img {
+    width: 100%;
+    border: 1px solid #EED7C5;
+    border-radius: 8px;
+}
+
+.atencionWhatsapp {
+    text-decoration: none;
+    font-size: 60px;
+    color: #EEE2DF;
+    position: fixed;
+    /* Posición fija para que permanezca al hacer scroll */
+    bottom: 20px;
+    /* Distancia desde la parte inferior */
+    right: 20px;
+    /* Distancia desde el lado derecho */
+    z-index: 100;
+    /* Asegura que esté sobre otros elementos */
+}
+
+.suscripcionNewsletter {}
+
+.iconosMetodosDePago {
+    font-size: 30px;
+}
+
+.iconosRedesFooter {
+    text-decoration: none;
+    font-size: 30px;
+    color: #EEE2DF;
+}
+
+.copyRight {
+    font-size: 12px;
 }
