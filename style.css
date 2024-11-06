@@ -1,59 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-    font-size: 16px;
-}
-
 * {
     font-family: "Montserrat", sans-serif;
-    padding: auto;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body{
+    background-color: #EEE2DF;
+}
+
+h1 {
     font-family: "Ephesis", cursive;
     font-size: 45px;
+    color: #7A5D52;
 }
 
-header nav a {
-    text-decoration: none;
-    color: inherit;
-    display: grid;
-    justify-content: row;
+h2 {
+    font-family: "Ephesis", cursive;
+    font-size: 2rem;
+    color: #7A5D52;
+    text-align: center;
+}
+
+h4{
+    font-size: 1em;
+    color: #EED7C5;
+}
+
+header {
+    background-color: #7A5D52;
+    color: #EED7C5;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.logo{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0;
+}
+
+.listaItem{
     list-style: none;
+    display: inline-flex;
+    
+}
+
+.ulHeader {
     padding: 0;
-    margin: 0;
-    font-weight: bold;
-    margin: 0 15px;
-}
+    width: 100%;
+  }
+  
 
-ul {
-    list-style: none;
-}
-
-.botonesNavegacion {
-    color: #EEE2DF;
+.linkHeader {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: black;
+  }
+  
+  a:hover {
+    color: orange;
+  }
+  
+.linkHeader{
+    text-decoration: none;
 }
 
 .iconoCarritoDeCompras {
-    font-size: 30px;
+    list-style: none; 
+    font-size: 1.5em;
+    color: #EED7C5;
+    
 }
 
-header,
-footer {
-    font-size: 14px;
-    padding: 20px;
-
-    .logo {
-        width: 300px;
-    }
-
-    background-color: #7A5D52;
-    color: #EEE2DF;
+.linkIconoCarrito{
+    text-decoration: none;
 }
 
 body {
@@ -61,71 +93,85 @@ body {
     color: #010101;
 }
 
-.sectionIndexPrincipal {
+.indexPrincipal {
     background-image: url(".//assets/img/imagen_shop_now.jpg");
     background-size: cover;
     background-position: end center;
     height: 80vh;
 }
 
-.tituloBannerCompra {
+h1 {
     display: flex;
     justify-content: center;
 }
 
-.botonDeCompraBanner{
+
+.botonCompraBanner{
     color: white; /* Cambia el color del texto */
     border: none; /* Elimina el borde */
     cursor: pointer; 
     border-radius: 5px; 
     text-align: center;
+    
 }
 
-.fotosProductosRecomendados {
+.tarjetaDestacados img {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 10px;
     padding: 10px;
-}
-
-.fotosProductosRecomendados a {
-    width: 30%;
-    text-decoration: none;
-}
-
-.fotosProductosRecomendados img {
-    width: 100%;
-    border: 1px solid #EED7C5;
+    border: 1px solid #3f2502;
     border-radius: 8px;
+    object-fit: cover;
 }
 
-.atencionWhatsapp {
+footer{
+    background-color: #7A5D52;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+    
+.footer{
     text-decoration: none;
-    font-size: 60px;
-    color: #EEE2DF;
-    position: fixed;
-    /* Posición fija para que permanezca al hacer scroll */
+}
+
+/* Preguntar por que como logica no quita los enlaces, y porque no me coloca los enlaces en columna*/
+.linkFooter {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+}
+
+.fa-money-bill-transfer, .fa-credit-card, .fa-cc-visa, .fa-cc-mastercard, .fa-cc-amex{
+    color: #EED7C5;
+    font-size: 1.5em;
+}
+
+.fa-instagram, .fa-x-twitter{
+    text-decoration: none;
+    list-style: none; 
+    font-size: 3em;
+    color: #EED7C5;
+}
+
+.fa-whatsapp{
+    font-size: 3em;
+    color:rgb(44, 181, 44);
+    position:fixed;
     bottom: 20px;
-    /* Distancia desde la parte inferior */
     right: 20px;
-    /* Distancia desde el lado derecho */
-    z-index: 100;
-    /* Asegura que esté sobre otros elementos */
+   
 }
 
-.suscripcionNewsletter {}
-
-.iconosMetodosDePago {
-    font-size: 30px;
-}
-
-.iconosRedesFooter {
-    text-decoration: none;
-    font-size: 30px;
-    color: #EEE2DF;
-}
-
-.copyRight {
-    font-size: 12px;
-}
+p{
+    font-size: 1em;
+    color: white;
+    }
+    .copywriter{
+        font-size: .8em;
+    }
