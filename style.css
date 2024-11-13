@@ -31,62 +31,55 @@ h4{
 
 header {
     background-color: #7A5D52;
-    color: #EED7C5;
-    padding: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    
+    
+    a:hover {
+        color: orange;
+      }
+
 }
 
+@media screen and (max-width : 768px) {header {
+    background-color: #7A5D52;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}}
 
 
 .logo{
-    height: 200px;
+    height: 100px;
+    padding: 0px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 0;
+    align-items: center;
 }
 
-.listaItem{
+.navHeader{
+    display: flex;
+    align-items: center;
+}
+
+
+.ulHeader{
+    padding: 10px;
     list-style: none;
-    display: inline-flex;
+    display: flex;
     
 }
 
-.ulHeader {
-    padding: 0;
-    width: 100%;
-  }
-  
 
-.linkHeader {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    color: black;
-  }
-  
-  a:hover {
-    color: orange;
-  }
-  
 .linkHeader{
     text-decoration: none;
+    color: black;
+    display: flex;
+    margin-right: 20px;
+
 }
 
-.iconoCarritoDeCompras {
-    list-style: none; 
-    font-size: 1.5em;
-    color: #EED7C5;
-    
-}
-
-.linkIconoCarrito{
-    text-decoration: none;
-}
 
 body {
     background-color: #EED7C5;
@@ -100,6 +93,13 @@ body {
     height: 80vh;
 }
 
+@media screen and (max-width : 768px) {.indexPrincipal {
+    background-image: url(".//assets/img/imagen_shop_now.jpg");
+    background-size: cover;
+    background-position: end center;
+    height: 50vh;
+}}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -107,8 +107,6 @@ h1 {
 
 
 .botonCompraBanner{
-    color: white; /* Cambia el color del texto */
-    border: none; /* Elimina el borde */
     cursor: pointer; 
     border-radius: 5px; 
     text-align: center;
@@ -117,8 +115,6 @@ h1 {
 
 .tarjetaDestacados img {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     gap: 10px;
     padding: 10px;
     border: 1px solid #3f2502;
@@ -133,9 +129,22 @@ footer{
     align-items: center;
     height: 50vh;
 }
+
+
+footer{
+    background-color: #7A5D52;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
     
 .footer{
+    padding: 10px;
     text-decoration: none;
+    a:hover {
+        color: orange;
+      }
 }
 
 /* Preguntar por que como logica no quita los enlaces, y porque no me coloca los enlaces en columna*/
@@ -170,7 +179,7 @@ footer{
 
 p{
     font-size: 1em;
-    color: white;
+    color: black;
     }
     .copywriter{
         font-size: .8em;
