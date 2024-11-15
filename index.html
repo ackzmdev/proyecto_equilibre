@@ -11,80 +11,98 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="/index.html">
-            <img class="logo" src="./assets/img/logo_equilibre_web.png" alt="logo tienda equilibre skin">
-        </a>
-        <nav class="navHeader">
+    <div class="container">
+        <header class="header">
+            <a href="/index.html">
+                <img class="logo" src="./assets/img/logo_equilibre_web_blanco.png" alt="logo tienda equilibre skin">
+            </a>
+            <nav class="navHeader"></nav>
             <ul class="ulHeader">
-                <li class="listaItemHeader"><a class="linkHeader" href="#">Inicio</a></li>
-                <li class="listaItemHeader"><a class="linkHeader" href=".//pages/rutinas.html">Rutinas - Skin Care</a></li>
-                <li class="listaItemHeader"><a class="linkHeader" href=".//pages/quienes_somos.html">Quiénes somos</a></li>
-                <li class="listaItemHeader"><a class="linkHeader" href=".//pages/contacto.html">Contacto</a></li>
-                <li class="listaItemHeader"><a class="linkHeader" href=".//pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-            
-        </nav>
-        
-        
-        
-    </header>
-    <main>
-        <section class="indexPrincipal">
-            <div>
-                <h1>Cuida de tu piel y busca el equilibrio</h1>
-                <!--<img src=".//assets/img/imagen_shop_now.jpg" alt="imagen de compra ahora" height="720px">
-                <button type="submit" id="comprarAhora" name="comprarAhora">Comprar ahora</button> (la colocaremos despues en css)-->
-            </div>
-            <div class="botonCompraBanner">
-                <button type="button" name="botonDeCompraBanner" value="botonDeCompraBanner">
-                    <a href=".//pages/carrito.html">Compra aquí</a>
-                </button>
-            </div>
-        </section>
+                <li class="listaItemHeader"><a class="linkHeader" href="./index.html">Inicio</a></li>
+                <li class="listaItemHeader"><a class="linkHeader" href="./pages/rutinas.html">Rutinas - Skin
+                        Care</a>
+                </li>
+                <li class="listaItemHeader"><a class="linkHeader" href="./pages/quienes_somos.html">Quiénes
+                        somos</a>
+                </li>
+                <li class="listaItemHeader"><a class="linkHeader" href="./pages/contacto.html">Contacto</a></li>
+                <li class="listaItemHeader"><a class="linkHeader" href="./pages/carrito.html"><i
+                            class="fa-solid fa-cart-shopping"></i></a></li>
+        </header>
 
-        <section class="productosRecomendados">
-            <h2>Productos recomendados</h2>
-            <div class="GaleriaRecomendados">
-                <div class="tarjetaDestacados">
-                    <img src=".//assets/img/producto5.png" alt="#"></a>
-                    <h3>Serum The Ordinary</h3>
-                    <h4>$8.500,00</h4>
-                    <a href="">Agregar Carrito</a>
+        <main>
+            <section class="indexPrincipal">
+                <div class="tituloBannerPrincipal">
+                    <h1>Cuida de tu piel y busca el equilibrio</h1>
                 </div>
-                <div class="tarjetaDestacados">
-                    <img src=".//assets/img/producto9.png" alt="#"></a>
-                    <h3>Bálsamo Cicauronic</h3>
-                    <h4>$3.500,00</h4>
-                    <a href="">Agregar Carrito</a>
+                <div class="botonCompraBanner">
+                    <button type="button" name="botonDeCompraBanner" value="botonDeCompraBanner">
+                        <a href=".//pages/carrito.html">Compra aquí</a>
+                    </button>
                 </div>
-                <div class="tarjetaDestacados">
-                    <img src=".//assets/img/producto10.png" alt="#"></a>
-                    <h3>Rodillo masajeador facial</h3>
-                    <h4>$5.000,00</h4>
-                    <a href="">Agregar Carrito</a>
-                </div>
+            </section>
+
+            <div>
+                <h2 class="tituloProdcutosRecomendados">Productos recomendados</h2>
             </div>
-        </section>
+
+            <section class="galeriaRecomendados">
+
+                <div class="productoRecomendado">
+                    <div class="tarjetaDestacados">
+                        <img src=".//assets/img/producto5.png" alt loading="lazy"></a>
+                        <p>Serum The Ordinary</p>
+                        <p>$8.500,00</p>
+                        <a class="agregarCarrito" href="">Agregar <i class="fa-solid fa-cart-shopping"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="productoRecomendado">
+                    <div class="tarjetaDestacados">
+                        <img src=".//assets/img/producto9.png" alt loading="lazy"></a>
+                        <p>Bálsamo Cicauronic</p>
+                        <p>$3.500,00</p>
+                        <a class="agregarCarrito" href="">Agregar <i class="fa-solid fa-cart-shopping"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="productoRecomendado">
+                    <div class="tarjetaDestacados">
+                        <img src=".//assets/img/producto10.png" alt loading="lazy"></a>
+                        <p>Rodillo masajeador facial</p>
+                        <p>$5.000,00</p>
+                        <a class="agregarCarrito" href="">Agregar <i class="fa-solid fa-cart-shopping"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+    </div>
+
+    </section>
+
     </main>
 
     <footer class="footer">
-        <nav class="navFooter">
-            <ul class="ulHeader">
-                <li class="listaItemFooter"><a class="linkFooter" href="">Sobre Nosotros</a></li>
-                <li class="listaItemFooter"><a class="linkFooter" href="">Política de Privacidad</a></li>
-                <li class="listaItemFooter"><a class="linkFooter" href="">Términos y Condiciones</a></li>
-            </ul>
-        </nav>
+        <div>
+            <nav class="navFooter">
+                <ul class="ulHeader">
+                    <li class="listaItemFooter"><a class="linkFooter" href="">Sobre Nosotros</a></li>
+                    <li class="listaItemFooter"><a class="linkFooter" href="">Política de Privacidad</a></li>
+                    <li class="listaItemFooter"><a class="linkFooter" href="">Términos y Condiciones</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <h4>Suscríbete a nuestro Newsletter</h4>
-        <form action="">
-            <input type="email" placeholder="ejemplo@email.com" id="emailSuscripcion" name="emailSuscripcion">
-            <input type="submit" value="Suscribirme">
-        </form>
-
-        <div class="metodosDePagoFooter">
-            <h4>Métodos de pago aceptados:</h4>
+        <div class="suscribeteNews">
+            <h4 class="suscribete">Suscríbete a nuestro Newsletter</h4>
+            <form action="">
+                <input type="email" placeholder="ejemplo@email.com" id="emailSuscripcion" name="emailSuscripcion">
+                <input type="submit" value="Suscribirme">
+            </form>
+        </div>
+        <!--<div class="metodosDePagoFooter">
+            <h4 class="MetodosDePagos">Métodos de pago aceptados:</h4>
             <div class="iconosMetodosDePago">
                 <ul class="ulFooter">
                     <li class="listaItemFooter"><i class="fa-solid fa-money-bill-transfer"></i></li>
@@ -94,25 +112,29 @@
                     <li class="listaItemFooter"><i class="fa-brands fa-cc-amex"></i></li>
                 </ul>
             </div>
+        </div>-->
+
+        <div class="Visitanos">
+            <li class="listaItem"><a href="https://www.instagram.com/equilibreskin__/"><i
+                        class="fa-brands fa-instagram"></i></a> <a href="https://x.com/?lang=es"><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
         </div>
-
-        <h4>Visítanos en:</h4>
-        <li class="listaItem"><a href="https://www.instagram.com/equilibreskin__/"><i class="fa-brands fa-instagram"></i></a></li>
-        <li class="listaItem"><a class="iconosRedesFooter" href="https://x.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a></li>
-
-        <address>
-            <p>Dirección: Av. Santa fe 4200, Palermo, Ciudad de Buenos Aires</p>
-            <p>Teléfono: (11) 8366-5542</p>
-            <p>Correo electrónico: info@equilibreskin.com</p>
-        </address>
-
+        
+        <div class="direccion">
+            <address>
+                <p>Dirección: Av. Santa fe 4200, Palermo, Ciudad de Buenos Aires. | Teléfono: (11) 8366-5542 | Email: info@equilibreskin.com</p>
+            </address>
+        </div>
+        
         <div>
             <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
 
-        <p class="copywriter">&copy; 2024 Equilibre. Todos los derechos reservados.</p>
+        <p class="copywrite">&copy; 2024 Equilibre. Todos los derechos reservados.</p>
 
     </footer>
+
+    </div>
 </body>
 
 </html>
