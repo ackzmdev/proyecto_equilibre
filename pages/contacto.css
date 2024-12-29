@@ -90,25 +90,30 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-h2{
+h2 {
     padding: 30px;
 }
 
-.formulario{
+.formulario {
     color: #7A5D52;
     text-decoration: none;
     font-size: 15px;
     background-color: #EED7C5;
     padding: 5px 15px;
-    border-bottom-style: hidden;
     border-radius: 8px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.botonSubmit{
+input {
+    border-style: solid;
+}
+
+.botonSubmit {
     color: #EED7C5;
     text-decoration: none;
     font-size: 15px;
@@ -169,7 +174,7 @@ footer {
 
 }
 
-.botonEnviar{
+.botonEnviar {
     color: #EED7C5;
     text-decoration: none;
     font-size: 15px;

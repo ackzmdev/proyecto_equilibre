@@ -37,11 +37,6 @@ h3 {
     color: #7A5D52;
 }
 
-/*h4 {
-    padding: 5px;
-    font-size: .8em;
-    color: #7A5D52;
-}*/
 
 .container {
     min-height: 100vh;
@@ -85,12 +80,80 @@ body {
     color: #7A5D52;
 }
 
-p {
+
+/* (Se suplanta por el recuadro de precompra)
+/*.tituloCarrito {
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: start;
+}*/
+
+main {
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex: column;
+}
+
+/* Estilo de carrito main*/
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.cart-container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: solid #7A5D52;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    padding: 10px 0;
+    border-bottom: 1px solid #7A5D52;
+    gap: 20px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: auto;
+}
+
+.cart-item-title {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-controls button {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: none;
+    background-color: #7A5D52;
+    cursor: pointer;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 
@@ -121,6 +184,7 @@ footer {
 
 /* Preguntar por que cómo lógica no quita los enlaces, y porque no me coloca los enlaces en columna*/
 .linkFooter {
+    padding: 10px;
     align-content: space-around;
     text-decoration: none;
     color: #EED7C5;
@@ -129,6 +193,7 @@ footer {
 }
 
 .suscribete {
+    padding: 10px;
     color: #EED7C5;
     text-align: center;
 
@@ -139,31 +204,10 @@ footer {
 
 }
 
-/*.MetodosDePagos {
-    color: #EED7C5;
-}
-
-.fa-money-bill-transfer,
-.fa-credit-card,
-.fa-cc-visa,
-.fa-cc-mastercard,
-.fa-cc-amex {
-    display: flex;
-    flex-direction: row;
-    color: #EED7C5;
-    font-size: 1.5em;
-    border-style: solid;
-    border-color: red;
-}*/
-
-/*.visitanosSubtitulo {
-    color: #EED7C5;
-   
-}*/
-
 .fa-instagram,
 .fa-x-twitter {
     padding: 10px;
+    margin-top: 10px;
     list-style: none;
     font-size: 2em;
     color: #EED7C5;

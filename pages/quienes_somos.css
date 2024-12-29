@@ -80,21 +80,43 @@ header {
     margin-right: 20px;
 }
 
-p {
-    padding: 50px;
-    text-align: justify;
+main {
+    padding: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 50px;
-    line-height: 50px;
-  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.primerParrafo,
+.foto_equipo {
+    flex: 1;
+}
+
+.primerParrafo {
+    padding: 0;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.fotoEquipo {
+    padding: 0;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.segundoParrafo {
+    padding: 0;
+    text-align: justify;
+    line-height: 1.8;
+    flex: 1;
 }
 
 
 footer {
-    margin-top: 10px;
     padding: 30px;
     background-color: #7A5D52;
     flex-flow: row wrap;
@@ -159,6 +181,7 @@ footer {
     color: #EED7C5;
    
 }*/
+
 
 .fa-instagram,
 .fa-x-twitter {
